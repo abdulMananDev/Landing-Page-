@@ -1,53 +1,51 @@
-.header{
-    background-color: $color-grey-dark-1;
-    grid-column: full-start/ col-end 6;
-    background-image: linear-gradient(rgba($color-secondary,.93),rgba($color-secondary,.93)),url(../img/hero.jpeg);
-    background-size: cover;
-    display:grid;
-    padding:  7rem;
-    padding-top: 2rem;
-    grid-template-rows: 1fr min-content 6rem 1fr;
-    grid-row-gap: 1.2rem;
-    grid-template-columns: max-content;
+.header {
+  background-color: $color-grey-dark-1;
+  grid-column: full-start/ col-end 6;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.93),
+      rgba($color-secondary, 0.93)
+    ),
+    url(../img/hero.jpeg);
+  background-size: cover;
+  display: grid;
+  padding: 7rem;
+  padding-top: 2rem;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-row-gap: 1.2rem;
+  grid-template-columns: max-content;
 
-    
-    &__img{
-        height:3rem;
-        justify-self: center;
+  &__img {
+    height: 3rem;
+    justify-self: center;
+  }
+  &__seenon-text {
+    color: $color-grey-light-2;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 15px;
+    align-items: center;
+    font-size: 1.6rem;
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor;
     }
-    &__seenon-text{
-        color:$color-grey-light-2;
-        display: grid;
-        grid-template-columns: 1fr max-content 1fr;
-        grid-column-gap:15px ;
-        align-items: center;
-        font-size: 1.6rem;
-        &::before,
-        &::after{
-            content: "";
-            height:1px;
-            display:block;
-            background-color: currentColor;
+  }
+  &__seenon-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // grid-column-gap: 3rem;
+    justify-items: center;
 
-        }
-
+    img {
+      height: 2.5rem;
+      filter: brightness(70%);
     }
-    &__seenon-logo{
-        display:grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-column-gap: 3rem;
-        justify-items:center;
-
-        img{
-           height: 2.5rem;
-           filter:brightness(70%); 
-        }
-    }
-    &__btn{
-        align-self: start;
-        justify-self: start;
-    }
-
-
+  }
+  &__btn {
+    align-self: start;
+    justify-self: start;
+  }
 }
-

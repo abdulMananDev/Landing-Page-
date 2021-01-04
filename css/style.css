@@ -11,14 +11,14 @@ html {
 
 body {
   font-family: "Nunito" sans-serif;
-  color: #6D5D48;
+  color: #6d5d48;
   font-weight: 300;
   line-height: 1.6; }
 
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .heading-4, .heading-1, .heading-2, .heading-3 {
   font-family: "Josefin Sans", "sans-serif";
@@ -29,7 +29,7 @@ body {
   .heading-4--light {
     color: #f9f7f6; }
   .heading-4--dark {
-    color: #54483A; }
+    color: #54483a; }
 
 .heading-1 {
   font-size: 4.5rem;
@@ -42,7 +42,7 @@ body {
   .heading-2--light {
     color: #f9f7f6; }
   .heading-2--dark {
-    color: #54483A; }
+    color: #54483a; }
 
 .heading-3 {
   font-size: 1.6rem;
@@ -61,7 +61,7 @@ body {
   cursor: pointer;
   transition: all .2s; }
   .btn:hover {
-    background-color: #B28451; }
+    background-color: #b28451; }
 
 .mb-s {
   margin-bottom: 2rem; }
@@ -102,7 +102,7 @@ body {
     transform: translateY(1.3rem); }
 
 .header {
-  background-color: #54483A;
+  background-color: #54483a;
   grid-column: full-start/ col-end 6;
   background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
   background-size: cover;
@@ -130,7 +130,6 @@ body {
   .header__seenon-logo {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 3rem;
     justify-items: center; }
     .header__seenon-logo img {
       height: 2.5rem;
@@ -342,7 +341,8 @@ body {
 .footer {
   background-color: #101d2c;
   grid-column: full-start / full-end;
-  padding: 8rem; }
+  padding: 8rem;
+  font-family: "Josefin Sans", sans-serif; }
   .footer .nav {
     list-style: none;
     text-decoration: none;
@@ -353,13 +353,14 @@ body {
     .footer .nav__link:link, .footer .nav__link:visited {
       font-size: 1.4rem;
       color: #fff;
-      font-family: "Josefin Sans", "sans-serif";
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 600;
       text-transform: uppercase;
       text-align: center;
       text-decoration: none;
       display: block;
       padding: 1.5rem;
-      transition: all .2s; }
+      transition: all 0.2s; }
     .footer .nav__link:hover, .footer .nav__link:active {
       background-color: rgba(255, 255, 255, 0.05);
       transform: translateY(-1rem); }
